@@ -28,6 +28,12 @@ public class SendParcelController {
 		model.addAttribute("sendparcelBookingId", "sendparcelBookingId");
 		model.addAttribute("sendParcelDetails", "Mumbai");
 		
-		return "sendparcel";
+		return "selectvendor";
+	}
+	
+	@RequestMapping(value="/selectvendor", method = RequestMethod.POST)
+	public String selectVendor(Model model, HttpServletRequest request,HttpServletResponse response) {
+		
+		return "redirect:/login";
 	}
 }
